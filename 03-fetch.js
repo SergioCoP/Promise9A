@@ -6,11 +6,14 @@ var items = ''
 console.log(person.data)
     const per = person.data.map(x => 
        
-        items += '<div class="col"><div class="card"> ' +
+        items += '<div class="col-sm-4">' +
+        '<div class="card">'+
         '<div class="card-body">' +
         '<div class="card-title"> ' + x.first_name + ' ' + x.last_name + '</div>'+
         '<button class="btn btn-primary" onclick="especificGet( ' + x.id+ ')">Ver</button>'+
-        '</div></div>' )
+        '</div>'+
+        '</div>' + 
+        '</div>' )
         bod.append(items)
 }).catch(console.log)
 
